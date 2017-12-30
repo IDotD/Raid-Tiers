@@ -1,0 +1,8 @@
+language: php
+dist: trusty
+php: '7.2'
+git:
+  depth: 3
+before_install:
+  - composer init --name="temp/check" --description="just checking the json" --author="No One" --type="application" --homepage="https://github.com/IDotD/Raid-Tiers" --require=idrinth/config-check:dev-master
+script: "@php vendor/bin/check-config.php -vvv"
