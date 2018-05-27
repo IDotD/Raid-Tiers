@@ -1,10 +1,10 @@
 {
     "nightmare": {
         "100000000000": {
-            "epic": null,
-            "legendary": null,
-            "uncommon": null,
-            "common": null,
+            "epic": 0,
+            "legendary": 0,
+            "uncommon": 0,
+            "common": 0,
             "stats": 3138
         },
         "2500000000000": {
