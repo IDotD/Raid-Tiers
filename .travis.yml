@@ -3,8 +3,7 @@ dist: trusty
 php: '7.0'
 git:
   depth: 3
-before_install:
-  - composer init --name="temp/check" --description="just checking the json" --author="No One <no@one.example>" --type="application" --homepage="https://github.com/IDotD/Raid-Tiers" --require=idrinth/config-check:dev-master
 install:
-  - composer install
-script: "vendor/bin/check-config.php -vvv -w"
+  - mkdir ../tools
+  - composer create-project idrinth/config-check dev-master --no-dev --working-dir=../tools
+script: ..tools/check-config -vvv -w
