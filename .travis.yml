@@ -5,5 +5,5 @@ git:
   depth: 3
 install:
   - mkdir ../tools
-  - composer create-project idrinth/config-check dev-master --no-dev --working-dir=../tools
-script: ..tools/check-config -vvv -w
+  - composer create-project idrinth/config-check --no-dev --stability=dev --remove-vcs --working-dir=../tools
+script: ..tools/config-check/check-config -vvv -w
