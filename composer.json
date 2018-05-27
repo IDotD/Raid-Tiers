@@ -1,0 +1,6 @@
+{
+  "name": "idotd/raid-tiers",
+  "require-dev": {
+    "idrinth/config-check": "dev-master"
+  }
+}
