@@ -3,9 +3,5 @@ dist: trusty
 php: '7.0'
 git:
   depth: 3
-install:
-  - mkdir ../tools
-  - composer create-project idrinth/config-check dev-master --no-dev --stability=dev --working-dir=../tools
-  - ll ../tools
-  - ll ../tools/dev-master
-script: php ..tools/dev-master/check-config -vvv -w
+install: composer install
+script: vendor/bin/check-config -vvv -w
